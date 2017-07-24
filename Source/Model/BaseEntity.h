@@ -1,0 +1,40 @@
+
+////////////////////////////////////////////////////////////////////////////////
+// Filename: BaseEntity.h
+////////////////////////////////////////////////////////////////////////////////
+#ifndef _BaseEntity_H_
+#define _BaseEntity_H_
+
+////////////////////////////////////////////////////////////////////////////////
+// Class name: BaseEntity
+////////////////////////////////////////////////////////////////////////////////
+enum EntityType 
+{ 
+	BaseType = 0,
+	HeroType, 
+	EnemyType, 
+	ObstacleType 
+};
+
+class BaseEntity
+{
+public:
+	BaseEntity();
+	BaseEntity(const BaseEntity&);
+	~BaseEntity();
+
+	int GetX();
+	int GetY();
+	
+	void SetX(int x);
+	void SetY(int y);
+
+	virtual EntityType GetType();
+	virtual void Update(float deltaTime);
+
+private:
+	int m_x;
+	int m_y;
+};
+
+#endif

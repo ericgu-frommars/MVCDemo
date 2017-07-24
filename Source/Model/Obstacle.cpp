@@ -1,0 +1,25 @@
+
+////////////////////////////////////////////////////////////////////////////////
+// Filename: Obstacle.cpp
+////////////////////////////////////////////////////////////////////////////////
+#include "..\stdafx.h"
+
+Obstacle::Obstacle()
+{
+
+}
+
+Obstacle::Obstacle(const Obstacle& other)
+{
+
+}
+
+Obstacle::~Obstacle()
+{
+
+}
+
+EntityType Obstacle::GetType()
+{
+	return ObstacleType;
+}
