@@ -41,8 +41,7 @@ void MovableEntity::Update(float deltaTime)
 {
 	if (m_isMoving)
 	{
-
-
+		// Maybe I will add path-finding algorithm instead setting the target position directly.
 		SetX(m_targetX);
 		SetY(m_targetY);
 		m_isMoving = false;
